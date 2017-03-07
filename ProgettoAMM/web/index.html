@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>NerdBook - The Geek's Social</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alberto Secci">
+        <meta name="keywords" content="social network nerdbook friends amici find group">	
     </head>
+
     <body>
-        <div>TODO write content</div>
+        <div id="header">
+                <div id="title">
+                        <h1>NerdBook</h1>
+                        <hr />
+                </div>
+        </div>
+        <div id="NavLog">	
+                <p>Accedi</p>
+                <form action="file:///C:/Users/xxxxx/Desktop/NerdBook/Dati_utente.txt" method="post">
+                <!--The POST method does not display the submitted form data in the page address field.-->
+                         <label for="corto">E-mail</label>
+                         <input type="email" name="corto" id="corto" />
+                         <label for="pswd">Password</label>
+                         <input type="password" name="pswd” "id="pswd" value="oscurato" />
+                         <input type="submit" value="Login" />
+                </form>
+                <a href="file:///C:/Users/xxxxx/Desktop/NerdBook/registrazione.html">Non sei ancora registrato? Clicca qui!</a>
+        </div>
     </body>
 </html>
