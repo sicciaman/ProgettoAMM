@@ -2,7 +2,7 @@
 
 <html>
     <head>
-            <title>Registrati su NerdBook | NerdBook</title>
+            <title>NerdBook</title>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="author" content="Alberto Secci">
@@ -13,54 +13,92 @@
     </head>
 
     <body>
-        <header>
-            <div id="title">
-                <h1>nerdbook</h1>
+        <div class="page">
+            <header>
+                <div id="title">
+                    <h1>nerdbook</h1>
+                </div>
+            </header>
+
+            <nav>	
+                <ul class="nav-bar">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li class="active">
+                        <a href="profilo.html">Profilo</a></li>
+                    <li><a href="bacheca.html">Bacheca</a></li>
+                </ul>
+            </nav>
+
+            <div id="side-bar1">
+                <h2 class="title-side" id="icon1">Persone</h2>
+                    <ul>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/balo_m.png">
+                            <a href="#" class="user-link">Super Mario</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/kaffe_m.jpg">
+                            <a href="#" class="user-link">Franca Littera</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/djanni_m.jpg">
+                            <a href="#" class="user-link">Djanni</a>
+                        </li>
+                    </ul>
+
+                <h2 class="title-side" id="icon2">Gruppi</h2>
+                    <ul>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/school_m.png">
+                            <a href="#" class="user-link">Quelli del Palazzo</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/football_m.png">
+                            <a href="#" class="user-link">Calcetto</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/bottle_m.png">
+                            <a href="#" class="user-link">Botellòn a Casteddu</a>
+                        </li>
+                    </ul>
             </div>
-        </header>
 
-        <nav>	
-            <ul class="nav-bar">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="descrizione.html">Descrizione</a></li>
-                <li class="active">
-                    <a href="profilo.html">Profilo</a></li>
-                <li><a href="bacheca.html">Bacheca</a></li>
-            </ul>
-        </nav>
-
-
-        <div id="div-body">	
-            <h2>Registrazione</h2>
-            <form action="#" method="post">
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" />
-                <label for="lastname">Cognome</label>
-                <input type="text" name="lastname" id="lastname" />
-                <br/> 
-                <label for="profilephoto">Foto profilo</label>
-                <input type="url" name="profilephoto" id="profilephoto" />
-                <br/>
-                <label for="phrase">Frase di presentazione</label>
-                <textarea rows="4" cols="20" 
-                          name="phrase" id="phrase">...
-                </textarea>
-                <br/>
-                <input type="radio" name="genere" value="male" checked> Uomo
-                <br/>
-                <input type="radio" name="genere" value="female"> Donna
-                <br/> 
-                <label for="data">Data di Nascita</label>
-                <input type="date" name="data" id="data" />
-                <br/> 
-                <label for="pswd">Password</label>
-                <input type="password" name="pswd" id="pswd" value="oscurato" />
-                <label for="pswd">Conferma Password</label>
-                <input type="password" name="confpswd" id="confpswd" value="oscurato" />
-                <br/> 
-                <input type="submit" value="Aggiorna!" />
-            </form>
-        </div>		
+            <div class="profileForm">	
+                <h2 id="profileTitle">Aggiorna il tuo profilo!</h2>
+                <div>
+                    <div id="picBox">
+                        <img class="proPic" alt="profile picture" src="img/mao.jpg">
+                    </div>
+                    <div id="proForm">
+                        <form action="#" method="post">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" />
+                            <label for="lastname">Cognome</label>
+                            <input type="text" name="lastname" id="lastname" />
+                            <br/> 
+                            <label for="data">Data di Nascita</label>
+                            <input class="helptip" type="text" name="data" id="data" value="gg/mm/aaaa" />
+                            <br/> 
+                            <label for="profilephoto">Foto profilo</label>
+                            <input class="helptip" type="url" name="profilephoto" id="profilephoto" value="URL foto profilo" />
+                            <br/>
+                            <label for="phrase">Frase di presentazione</label>
+                            <textarea rows="4" cols="20" 
+                                      name="phrase" id="phrase">...
+                            </textarea>
+                            <br/>
+                            <label for="pswd">Password</label>
+                            <input type="password" name="pswd" id="pswd" value="oscurato" />
+                            <label for="pswd">Conferma Password</label>
+                            <input type="password" name="confpswd" id="confpswd" value="oscurato" />
+                            <br/> 
+                            <input type="submit" value="Aggiorna!" />
+                        </form>
+                    </div>
+                </div>
+            </div>	
+        </div>
     </body>
 </html>

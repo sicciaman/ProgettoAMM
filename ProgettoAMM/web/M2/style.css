@@ -1,7 +1,12 @@
 body {
     background-color: #f3f4f5;  
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.page {
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -34,6 +39,7 @@ p  {
     font-size: 15px;
     letter-spacing: 1.5px;
     text-indent: 50px;
+    text-shadow: 2px 2px #333;
 }
 /*
 * Barra di Navigazione
@@ -78,10 +84,10 @@ nav li a:hover {
 
 #navBody {
     background-color: #fff;
-    margin-right: 1050px;
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid #ccc;
+    width: 25%;
 }
 
 #navBody ul {
@@ -108,9 +114,11 @@ nav li a:hover {
     cursor: pointer;
 }
 
-input[type=email], input[type=password]{
+input[type=email], input[type=password], input[type=text],
+    input[type=url], textarea
+{
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -118,21 +126,217 @@ input[type=email], input[type=password]{
     box-sizing: border-box;
 }
 
-.loginForm, .inputForm {
+.helptip {
+    color: #ccc;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #d86f01;
+    color: #fff;
+    padding: 10px 25px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:active {
+    width: 100%;
+    background-color: #ff5f00;
+    color: #fff;
+    padding: 10px 25px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 2px #333;
+    
+}
+
+
+
+.loginForm form label, .profileForm form label {
+    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+}
+
+.loginForm, .profileForm, #side-bar1, .single-post {
     background-color: #fff;
-    margin-top: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-.loginForm {
-    margin-right: 300px;
-    margin-left: 300px;
+.profileForm {
+    margin-left: 22%;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    margin-top: 30px;
 }
+
+
+
+.loginForm {
+    margin-top: 100px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
 
 #loginTitle, #profileTitle {
     text-align: center;
 }
+#side-bar1 {
+    float: left;
+    width: 18%;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+#side-bar1 ul {
+    list-style: none;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#side-bar1 ul li:hover {
+    background-color: #f3f4f5;
+    border: 1px solid #ccc; 
+}
+
+.title-side {
+    padding-left: 50px;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+#icon1 {
+    background-image: url('img/icon-title1.png');
+}
+
+#icon2 {
+    background-image: url('img/group-icon.png');
+}
+
+.user-link {
+    text-decoration: none;
+    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+.thumbnail {
+    padding-left: 5px;    
+}
 
 
+#picBox {
+    float: left;
+    width: 170px;
+    height: 170px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
 
+.proPic {
+    width: 160px;
+    height: 160px;
+}
+
+#proForm {
+    padding-left: 31%;
+    padding-right: 19%;
+}
+
+#posts {
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.single-post {
+    margin-left: 22%;
+    padding-bottom: 15px;
+    padding-left: 2%;
+    margin-top: 30px;
+}
+
+#new-post {
+    margin-left: 22%;
+}
+
+.border-left {
+    border-left: 1px solid #ced0d4;
+    height: 70%;
+}
+
+#showcase {
+    text-align: center;
+}
+
+.user-min {
+    max-height: 64px;
+    max-width: 64px;
+    padding-top: 15px;
+}
+
+#posts #new-post ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 34%;
+    overflow: hidden;
+    background-color: #e28e22;
+}
+
+
+#posts #new-post li {
+    float: left;
+}
+
+#posts #new-post li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+}
+
+#newpost-area {
+    margin-top: 0;
+    border-radius: 0px;
+}
+
+.post-img {
+    width: 8%;
+    float: left;
+}
+
+.post-user {
+    padding-top: 17px;
+    margin-left: 10%;   
+}
+
+.post-user a {
+    text-decoration: none;
+    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    font-weight: bold;
+    color: #e28e22;
+}
+
+.post-user a:hover {
+    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    font-weight: bold;
+    color: #e28e22;
+    text-decoration: underline;
+}

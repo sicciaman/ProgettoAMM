@@ -13,45 +13,109 @@
 	</head>
 	
 	<body>
-            <header>
-                <div id="title">
-                    <h1>nerdbook</h1>
+            <div class="page">
+                <header>
+                    <div id="title">
+                        <h1>nerdbook</h1>
+                    </div>
+                </header>
+
+                <nav>	
+                    <ul class="nav-bar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="descrizione.html">Descrizione</a></li>
+                        <li><a href="profilo.html">Profilo</a></li>
+                        <li class="active">
+                            <a href="bacheca.html">Bacheca</a></li>
+                    </ul>
+                </nav>
+
+                <div id="side-bar1">
+                    <h2 class="title-side" id="icon1">Persone</h2>
+                    <ul>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/balo_m.png">
+                            <a href="#" class="user-link">Super Mario</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/kaffe_m.jpg">
+                            <a href="#" class="user-link">Franca Littera</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="user image" src="img/thumbnails/djanni_m.jpg">
+                            <a href="#" class="user-link">Djanni</a>
+                        </li>
+                     </ul>
+
+                    <h2 class="title-side" id="icon2">Gruppi</h2>
+                    <ul>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/school_m.png">
+                            <a href="#" class="user-link">Quelli del Palazzo</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/football_m.png">
+                            <a href="#" class="user-link">Calcetto</a>
+                        </li>
+                        <li>
+                            <img  class="thumbnail" alt="group image" src="img/thumbnails/bottle_m.png">
+                            <a href="#" class="user-link">Botellòn a Casteddu</a>
+                        </li>
+                     </ul>
                 </div>
-            </header>
-			
-            <nav>	
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="descrizione.html">Descrizione</a></li>
-                    <li><a href="profilo.html">Profilo</a></li>
-                    <li class="active">
-                        <a href="bacheca.html">Bacheca</a></li>
-                </ul>
-            </nav>
-            
-            <div id="div-body">
-                <h2>Bacheca</h2>
                 <div id="posts">
-                    
-                    <div>
-                        <a href="#">Super Mario</a>
-                        <img title="picture" alt="Foto profilo" src="img/balo.png">
+                    <h2 id="showcase">Bacheca</h2>
+                    <div id="new-post">
+                        <div>    
+                            <ul>
+                                <li>
+                                    <a href="#">Nuovo Post</a>
+                                </li>
+                                <li>
+                                    <a class="border-left" href="#">Inserisci una foto</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <label for="newpost-area"></label>
+                            <textarea rows="4" cols="20" 
+                                      name="newpost" id="newpost-area">Condividi i tuoi pensieri!
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="single-post">
+                        <div class="post-img">
+                            <img class="user-min" title="picture" alt="Foto profilo" src="img/balo.png">
+                        </div>
+                        <div class="post-user">
+                            <a href="#">Super Mario</a>
+                        </div>
                         <p>Cerco i mi piace ihihih</p>
                     </div>
-                    <div>
-                        <a href="#">Franca Littera</a>
-                        <img title="picture" alt="Foto profilo" src="img/kaffe.jpg">
-                        <img title="postpicture" alt="Foto Caffè" src="img/buongiornissimo.jpg">
+                    <div class="single-post">
+                        <div class="post-img">
+                            <img class="user-min" title="picture" alt="Foto profilo" src="img/kaffe.jpg">
+                        </div>
+                        <div class="post-user">
+                            <a href="#">Franca Littera</a>
+                        </div>
+                        <div>
+                            <img title="postpicture" alt="Foto Caffè" src="img/buongiornissimo.jpg">
+                        </div>
                         <p>Buongiornissimoooo!!11! Ki vuole un po' di Kaffèèèè?!?!?</p>
                     </div>
-                    <div>
-                        <a href="#">Djannino</a>
-                        <img title="picture" alt="Foto profilo" src="img/djanni.jpg">
+                    <div class="single-post">
+                        <div class="post-img">
+                            <img class="user-min" title="picture" alt="Foto profilo" src="img/djanni.jpg">
+                        </div>
+                        <div class="post-user">
+                            <a href="#">Djannino</a>
+                        </div>
                         <p>Pure oggi a lezione...Per altri aggiornamenti <a href="https://www.facebook.com/djannino/">seguite la mia pagina Fb miaooooooo</a></p>
                     </div>
-                    
+
                 </div>
-            </div>
-	</body>
+           </div>
+        </body>
 </html>

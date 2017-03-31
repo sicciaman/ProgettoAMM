@@ -13,34 +13,34 @@
 	</head>
 	
 	<body>
-            <header>
-                <div id="title">
-                    <h1>nerdbook</h1>
+            <div class="page">
+                <header>
+                    <div id="title">
+                        <h1>nerdbook</h1>
+                    </div>
+                </header>
+
+                <nav>	
+                    <ul class="nav-bar">
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="active"><a href="login.html">Login</a></li>
+                        <li><a href="descrizione.html">Descrizione</a></li>
+                        <li><a href="profilo.html">Profilo</a></li>
+                        <li><a href="bacheca.html">Bacheca</a></li>
+                    </ul>
+                </nav>
+
+                <div class="loginForm">	
+                    <h2 id="loginTitle">Accedi</h2>
+                    <form action="#" method="post">
+                    <!--The POST method does not display the submitted form data in the page address field.-->
+                        <label for="corto">E-mail</label>
+                        <input type="email" name="corto" id="corto" />
+                        <label for="pswd">Password</label>
+                        <input type="password" name="pswd" id="pswd" value="oscurato" />
+                        <input type="submit" value="Login" />
+                    </form>
                 </div>
-            </header>
-			
-            <nav>	
-                <ul class="nav-bar">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="active"><a href="login.html">Login</a></li>
-                    <li><a href="descrizione.html">Descrizione</a></li>
-                    <li><a href="profilo.html">Profilo</a></li>
-                    <li><a href="/bacheca.html">Bacheca</a></li>
-                </ul>
-            </nav>
-		
-            <div id="div-body">	
-                <h2>Accedi</h2>
-                <form action="#" method="post">
-                <!--The POST method does not display the submitted form data in the page address field.-->
-                    <label for="corto">E-mail</label>
-                    <input type="email" name="corto" id="corto" />
-                    <label for="pswd">Password</label>
-                    <input type="password" name="pswd" id="pswd" value="oscurato" />
-                    <input type="submit" value="Login" />
-                </form>
-                <a href="profilo.html">Non sei ancora registrato? Clicca qui!</a>
             </div>
-		
 	</body>
 </html>
