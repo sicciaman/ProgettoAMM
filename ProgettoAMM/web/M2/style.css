@@ -25,7 +25,7 @@ h3 {
 
 p  {
     font-family: "Adobe Gothic Std B", Adobe, sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: #000; 
 }
 
@@ -75,13 +75,6 @@ nav li a:hover {
 }
 
 
-.checkList {
-    background-image: url('img/icon.png');
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    margin-top: 15px;
-}
-
 #navBody {
     background-color: #fff;
     padding-top: 5px;
@@ -130,6 +123,9 @@ input[type=email], input[type=password], input[type=text],
     color: #ccc;
 }
 
+input:focus{
+    background-color: #f3f4f5;
+}
 
 input[type=submit] {
     width: 100%;
@@ -216,14 +212,6 @@ input[type=submit]:active {
     padding-top: 5px;
 }
 
-#icon1 {
-    background-image: url('img/icon-title1.png');
-}
-
-#icon2 {
-    background-image: url('img/group-icon.png');
-}
-
 .user-link {
     text-decoration: none;
     font-family: "Adobe Gothic Std B", Adobe, sans-serif;
@@ -264,9 +252,9 @@ input[type=submit]:active {
 
 .single-post {
     margin-left: 22%;
-    padding-bottom: 15px;
     padding-left: 2%;
     margin-top: 30px;
+    padding-bottom: 15px;
 }
 
 #new-post {
@@ -283,8 +271,8 @@ input[type=submit]:active {
 }
 
 .user-min {
-    max-height: 64px;
-    max-width: 64px;
+    max-height: 48px;
+    max-width: 48px;
     padding-top: 15px;
 }
 
@@ -323,8 +311,7 @@ input[type=submit]:active {
 }
 
 .post-user {
-    padding-top: 17px;
-    margin-left: 10%;   
+    padding-top: 17px; 
 }
 
 .post-user a {
@@ -339,4 +326,57 @@ input[type=submit]:active {
     font-weight: bold;
     color: #e28e22;
     text-decoration: underline;
+}
+
+.post-info {
+    margin-bottom: 40px;
+}
+
+.photo {
+    width: 786px;
+}
+
+#share-button {
+    float: right;
+}
+
+#share-button input {
+    width: 100%;
+    background-color: #e28e22;
+    color: #fff;
+    padding: 10px 49px;
+    margin: 3px -4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#box-button {
+    height: 44px;
+    margin-top: -9px;
+    
+}
+
+/* Queste immmagini al contrario di quelle inserite nell'Html, non portano 
+*  contenuto, bensì sono una mera decorazione che rendono gradevole la grafica 
+*  del sito. Le immagini dell'Html invece portano contenuto in quanto per esempio
+*  possano essere delle foto del profilo quindi, mostrano chi è l'utente che ha 
+*  condiviso un certo post oppure cliccandoci sopra possono re-direzionare verso
+*  il profilo di uno user.
+*/
+
+.checkList {
+    background-image: url('img/icon.png');
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+#icon1 {
+    background-image: url('img/icon-title1.png');
+}
+
+#icon2 {
+    background-image: url('img/group-icon.png');
 }

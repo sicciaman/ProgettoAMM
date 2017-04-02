@@ -2,56 +2,70 @@
 
 <html>
     <head>
-        <title>NerdBook</title>
+        <title>Benvenuto su NerdBook | NerdBook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Alberto Secci">
         <meta name="keywords" content="social network nerdbook friends amici find group">	
         <meta name="lang=" content="it">
+        <link rel="stylesheet" type="text/css" media="screen"
+              href="../M2/style.css">
     </head>
     
     <body>
         <header>
             <div id="title">
-                <h1>NerdBook</h1>
+                <h1>nerdbook</h1>
             </div>
         </header>
 			
-        <nav>
-            <a href="login.html">Login</a>
-	</nav>
+        <nav>	
+            <ul class="nav-bar">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li class="active">
+                    <a href="descrizione.html">Descrizione</a></li>
+                <li><a href="profilo.html">Profilo</a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
+            </ul>
+        </nav>
         
-        <div id="divBody">
-            <div>
-                <h2>Descrizione di NerdBook</h2>
+        <div id="div-body">
+            <div id="welcomeTitle">
+                <h2>Bevenuto su NerdBook</h2>
             </div>
             
             <div id='navBody'>
                 <ul>
-                    <li><a href="#chisiamo">Chi siamo?</a></li>
-                    <li><a href="#service">Il nostro servizio</a></li>
-                    <li><a href="#chooseus">Scegli noi</a></li>
-                </ul>
+                    <li class="checkList">
+                        <a href="#chisiamo" class="des-link">Chi siamo?</a>
+                    </li>
+                    <li class="checkList">
+                        <a href="#service" class="des-link">Il nostro servizio</a>
+                    </li>
+                    <li class="checkList">
+                        <a href="#chooseus" class="des-link">Scegli noi</a>
+                    </li>
             </div>
             
             <div>
                 <a id="chisiamo">
                     <h3>Chi siamo?</h3>
                 </a>
-                <img title="aboutus" alt="Foto della sezione Chi Siamo"
-                     src="img/aboutus.jpg">
+           
                 <p>
                     NerdBook è il primo social network dedicato interamente al 
                     mondo dei Nerd. Il progetto è nato proprio tra le mura del 
                     mitico Palazzo delle Scienze governato da Djanni, Re dei 
-                    Nerd.
+                    Nerd. L'idea è nata infatti proprio da lui, che ha guidato 
+                    il gruppo di studenti verso la realizzazione del primo s
+                    Social Network dedicato interamente al mondo dei Nerd!
                 </p>
                 
                 <a id="service">
                     <h3>Il nostro servizio</h3>
                 </a>
-                <img title="service" alt="Foto della sezione Il Nostro Servizio"
-                     src="img/service.png">
+           
                 <p>
                     Grazie a NerdBook, avrete a disposizione un'intera community
                     con cui scambiare notizie e informazioni riguardanti ciò che
@@ -65,11 +79,12 @@
                 <a id="chooseus">
                     <h3>Perchè sceglierci</h3>
                 </a>
-                 <img title="chooseus" alt="Foto della sezione Scegli Noi"
-                     src="img/chooseus.jpg">
+               
                 <p>
                     NerdBook è una piattaforma totalmente gratuita e senza 
-                    banner pubblicitari che ostacolano la vostra schermata. E'
+                    banner pubblicitari che ostacolano la vostra schermata.
+                    Anche tutto questo è possibile grazie al contributo
+                    finanziario di Re Djanni. E'
                     tutto frutto dell'amore che noi sviluppatori proviamo per 
                     voi. Vi vogliamo bene, per questo vi diciamo: #CHOOSEUS
                 </p>
