@@ -1,21 +1,6 @@
 body {
     background-color: #f3f4f5;  
-    padding-left: auto;
-    padding-right: auto;
 }
-
-.page {
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-
-h2 {
-    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
-    font-size: 25px;
-    color: #d86f01;
-}
-
 
 h3 {
     font-family: "Adobe Gothic Std B", Adobe, sans-serif;
@@ -33,38 +18,18 @@ p  {
 /*
 * Titolo e logo sito
 */
-#title {
+
+#title-login a {
     color: #d86f01;
     font-family: "Adobe Gothic Std B", Adobe, sans-serif;
     font-size: 15px;
     letter-spacing: 1.5px;
-    text-indent: 50px;
     text-shadow: 2px 2px #333;
+    text-decoration: none;
 }
 /*
 * Barra di Navigazione
 */
-.nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: #f3f4f5;
-    text-align: center;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
-    font-weight: bold;
-}
 
 nav li a:hover {
     background-color: #111;
@@ -74,14 +39,6 @@ nav li a:hover {
     background-color: #d86f01;
 }
 
-
-#navBody {
-    background-color: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 1px solid #ccc;
-    width: 25%;
-}
 
 #navBody ul {
     list-style: none;
@@ -164,35 +121,11 @@ input[type=submit]:active {
     border-radius: 4px;
 }
 
-.profileForm {
-    margin-left: 22%;
-    padding-bottom: 30px;
-    padding-left: 5%;
-    margin-top: 30px;
-}
-
-
-
-.loginForm {
-    margin-top: 100px;
-    margin-right: 20%;
-    margin-left: 20%;
-    padding-bottom: 3%;
-    padding-right: 10%;
-    padding-left: 10%;
-}
-
-
 
 #loginTitle, #profileTitle {
     text-align: center;
 }
-#side-bar1 {
-    float: left;
-    width: 18%;
-    padding-left: 10px;
-    margin-top: 30px;
-}
+
 
 #side-bar1 ul {
     list-style: none;
@@ -205,12 +138,6 @@ input[type=submit]:active {
     border: 1px solid #ccc; 
 }
 
-.title-side {
-    padding-left: 50px;
-    background-repeat: no-repeat;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
 
 .user-link {
     text-decoration: none;
@@ -224,46 +151,16 @@ input[type=submit]:active {
 }
 
 
-#picBox {
-    float: left;
-    width: 170px;
-    height: 170px;
-    padding-left: 10px;
-    padding-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    
-}
-
 .proPic {
     width: 160px;
     height: 160px;
 }
 
-#proForm {
-    padding-left: 31%;
-    padding-right: 19%;
-}
-
-#posts {
-    padding-bottom: 30px;
-    margin-top: 30px;
-}
 
 .single-post {
-    margin-left: 22%;
     padding-left: 2%;
     margin-top: 30px;
     padding-bottom: 15px;
-}
-
-#new-post {
-    margin-left: 22%;
-}
-
-.border-left {
-    border-left: 1px solid #ced0d4;
-    height: 70%;
 }
 
 #showcase {
@@ -276,29 +173,6 @@ input[type=submit]:active {
     padding-top: 15px;
 }
 
-#posts #new-post ul {
-    list-style: none;
-    margin: 0;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 34%;
-    overflow: hidden;
-    background-color: #e28e22;
-}
-
-
-#posts #new-post li {
-    float: left;
-}
-
-#posts #new-post li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 15px 16px;
-    text-decoration: none;
-    font-family: "Adobe Gothic Std B", Adobe, sans-serif;
-}
 
 #newpost-area {
     margin-top: 0;
@@ -312,6 +186,7 @@ input[type=submit]:active {
 
 .post-user {
     padding-top: 17px; 
+    position: relative;
 }
 
 .post-user a {
@@ -319,6 +194,8 @@ input[type=submit]:active {
     font-family: "Adobe Gothic Std B", Adobe, sans-serif;
     font-weight: bold;
     color: #e28e22;
+    position: absolute;
+    left: 51px;
 }
 
 .post-user a:hover {
@@ -329,34 +206,574 @@ input[type=submit]:active {
 }
 
 .post-info {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 .photo {
     width: 786px;
 }
 
-#share-button {
-    float: right;
-}
 
-#share-button input {
-    width: 100%;
-    background-color: #e28e22;
-    color: #fff;
-    padding: 10px 49px;
-    margin: 3px -4px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
 #box-button {
     height: 44px;
     margin-top: -9px;
     
 }
+
+@media only screen and (min-width: 1024px){
+    h2 {
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 25px;
+        color: #d86f01;
+    }
+    
+    .page {
+        padding-right: 10%;
+        padding-left: 10%;
+        position: relative;
+    }
+    
+    nav {
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    
+    .nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    
+    nav li {
+        float: left;
+    }
+    
+    nav li a {
+        display: block;
+        color: #f3f4f5;
+        text-align: center;
+        padding: 15px 16px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-weight: bold;
+    }
+    
+    #title a {
+        color: #d86f01;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px #333;
+        float: left;
+        margin-top: -14px;
+        text-decoration: none;
+    }
+
+    
+    #side-bar1 {
+        float: left;
+        width: 15%;
+        padding-left: 10px;
+        margin-top: 30px;
+        position: absolute;
+    }
+    
+    #icon1 {
+        background-image: url('img/icon-title1.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        float: left;
+        position: absolute;
+        top: 16px;
+    }
+    
+    #icon2 {
+        background-image: url('img/group-icon.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    
+    .title-side {
+        padding-left: 50px;
+    }
+    
+    
+    .loginForm {
+        margin-top: 100px;
+        margin-right: 20%;
+        margin-left: 20%;
+        padding-bottom: 3%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    
+    #picBox {
+        float: left;
+        width: 170px;
+        height: 170px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    
+    #proForm {
+        padding-left: 31%;
+        padding-right: 19%;
+    }
+    
+    #posts {
+        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 25%;
+    }
+    
+    .profileForm {
+        margin-left: 25%;
+        padding-bottom: 30px;
+        padding-left: 5%;
+        margin-top: 30px;
+    }
+
+    
+    #navBody {
+        background-color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+        width: 25%;
+    }
+    
+    .border-left {
+        border-left: 1px solid #fff;
+        height: 70%;
+    }
+    
+    #posts #new-post li {
+        float: left;
+    }
+    
+    #posts #new-post ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 34%;
+        overflow: hidden;
+        background-color: #e28e22;
+    }
+    
+    #posts #new-post li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 15px 16px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    }
+    
+    #share-button {
+        float: right;
+    }
+    
+    
+    #share-button input {
+        width: 100%;
+        background-color: #e28e22;
+        color: #fff;
+        padding: 10px 49px;
+        margin: 3px -4px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+    h2 {
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 18px;
+        color: #d86f01;
+    }
+    
+    .page {
+        padding-right: 10%;
+        padding-left: 10%;
+        position: relative;
+    }
+    
+    nav {
+        margin-top: 2%;
+    }
+    
+    .nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    
+    nav li {
+        float: left;
+    }
+    
+    nav li a {
+        display: block;
+        color: #f3f4f5;
+        text-align: center;
+        padding: 15px 6px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-weight: bold;
+    }
+    
+    #title a {
+        color: #d86f01;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px #333;
+        margin-top: -14px;
+        text-decoration: none;
+    }
+    
+    #side-bar1 {
+        float: left;
+        width: 15%;
+        padding-left: 10px;
+        margin-top: 30px;
+        position: absolute;
+        min-height: 300px;
+    }
+    
+    #side-title1 {
+        top: 31px;
+        left: 2px;
+    }
+    
+    #first-list {
+        position: absolute;
+        top: 56px;
+    }
+    
+    #second-list {
+        position: absolute;
+        top: 201px;
+    }
+    #side-title2 {
+        top: 172px;
+    }
+    
+    #icon1 {
+        background-image: url('img/icon-title1.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+    
+    #icon2 {
+        background-image: url('img/group-icon.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 162px;
+        left: 16px;
+    }
+    
+    
+    .title-side {
+        padding-top: 5px;
+        position: absolute;
+    }
+    
+    #side-bar1 li {
+            max-height: 25px;
+            overflow: hidden;
+    }
+    
+    .loginForm {
+        margin-top: 100px;
+        padding-bottom: 3%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    #picBox {
+        width: 170px;
+        height: 170px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        position: absolute;
+        left: 50%;
+        margin-left: -85px;
+    }
+    
+    #proForm {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 198px;
+    }
+    
+    .profileForm {
+        margin-left: 25%;
+        padding-bottom: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    #posts {
+        padding-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 25%;
+    }
+    
+    #navBody {
+        background-color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    #posts #new-post ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        overflow: hidden;
+        background-color: #e28e22;
+    }
+    
+    #posts #new-post li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 8px 12px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    }
+    
+    #share-button {
+        float: right;
+    }
+    
+    
+    #share-button input {
+        width: 100%;
+        background-color: #e28e22;
+        color: #fff;
+        padding: 10px 49px;
+        margin: 3px -4px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #responsive480 {
+        background-color: #000;
+    }
+    
+    h2 {
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 25px;
+        color: #d86f01;
+    }
+    
+    .page {
+        position: relative;
+    }
+    
+    #title {
+        height: 86px;
+        background-color: #000;
+        margin: -8px;
+        margin-top: -47px;
+    }
+    
+    #title h1 {
+        margin-top: 47px;
+        padding-top: 21px;
+        text-align: center;
+    }
+    
+    nav {
+        margin-top: 8px;
+        margin: -8px;
+    }
+    
+    nav li a {
+        display: block;
+        color: #f3f4f5;
+        text-align: center;
+        padding: 6px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-weight: bold;
+    }
+    
+    .nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+    }
+
+    
+    #title a {
+        color: #d86f01;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-shadow: 2px 2px #333;
+        margin-top: -14px;
+        text-decoration: none;
+    }
+
+    
+    #side-bar1 {
+        float: left;
+        width: 15%;
+        padding-left: 10px;
+        margin-top: 30px;
+        position: absolute;
+        display: none;
+    }
+    
+    #icon1 {
+        background-image: url('img/icon-title1.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        float: left;
+        position: absolute;
+        top: 16px;
+    }
+    
+    #icon2 {
+        background-image: url('img/group-icon.png');
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    
+    .title-side {
+        padding-left: 50px;
+    }
+    
+    
+    .loginForm {
+        margin-top: 100px;
+        padding-bottom: 3%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    
+    
+     #picBox {
+        width: 170px;
+        height: 170px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        position: absolute;
+        left: 50%;
+        margin-left: -85px;
+    }
+    
+    
+    
+    #proForm {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 198px;
+    }
+    
+    .profileForm {
+        padding-bottom: 30px;
+        padding-left: 5%;
+        margin-top: 30px;
+    }
+    
+    #posts {
+        padding-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    
+    #navBody {
+        background-color: #fff;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid #ccc;
+    }
+    
+    .border-left {
+        border-left: 1px solid #fff;
+        height: 70%;
+    }
+    
+    #posts #new-post li {
+        float: left;
+        width: 50%;
+    }
+    
+    #posts #new-post ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        overflow: hidden;
+        background-color: #e28e22;
+    }
+    
+    #posts #new-post li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 8px 12px;
+        text-decoration: none;
+        font-family: "Adobe Gothic Std B", Adobe, sans-serif;
+    }
+    
+    
+    #share-button input {
+        width: 100%;
+        background-color: #e28e22;
+        color: #fff;
+        padding: 10px 49px;
+        margin: 3px 0px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
 
 /* Queste immmagini al contrario di quelle inserite nell'Html, non portano 
 *  contenuto, bensì sono una mera decorazione che rendono gradevole la grafica 
@@ -373,10 +790,5 @@ input[type=submit]:active {
     margin-top: 15px;
 }
 
-#icon1 {
-    background-image: url('img/icon-title1.png');
-}
 
-#icon2 {
-    background-image: url('img/group-icon.png');
-}
+
